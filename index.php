@@ -8,34 +8,14 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/coffeescript@2.5.1/lib/coffeescript-browser-compiler-legacy/coffeescript.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/fengari-web@0.1.4/dist/fengari-web.js"></script>
-        <style type="text/less">
-            @align: center;
-            @bg: black;
-            @fg: white;
-            @fg2: #969696;
-            @lbs: 900;
-            body {
-            text-align: @align;
-            background-color: @bg;
-            color: @fg;
-            }
-            h1#tst {
-            text-decoration: underline overline;
-            font-weight: @lbs;
-            }
-            h1#tst:before, h1#tst:after {
-            content: "|";
-            }
-            a, a:visited, hr {
-            color: @fg2;
-            }
-            a:hover {
-            color: @fg2;
-            }
-            span {
-            font-weight: @lbs;
-            }
-        </style>
+        <link rel="stylesheet/less" type="text/css" href="./style.less" />
+
+        <!--TESTS-->
+        <link rel="stylesheet" href="./css.css" />
+        <link rel="stylesheet/less" type="text/css" href="./less.less" />
+        <!--END-->
+
+        <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
     </head>
     <body>
         <span id="html">HTML</span>
@@ -44,9 +24,7 @@
         <br />
         <span id="js"></span>
         <br />
-        <?php
-            echo '<span id="php">PHP</span>';
-        ?>
+        <?php include "./php.php"?>
         <br />
         <span id="css"></span>
         <br />
@@ -55,35 +33,8 @@
         <span id="cfs"></span>
         <br />
         <span id="lua"></span>
-        <script type='text/coffeescript'>
-            $("span#cfs").html "CoffeeScript";
-        </script>
-        <script type="application/lua">
-            w=js.global
-            w.lua.innerHTML="Lua"
-        </script>
-        <style type="text/less">
-            @s: "LESS";
-            span#less:before {
-            content: @s;
-            }
-        </style>
-        <style>
-            span#css:before {
-            content: "CSS";
-            }
-        </style>
-        <script>
-            $( document ).ready(() => {
-              $("span#jq").html("JavaScript (JQuery)");
-            });
-        </script>
-        <script>
-            window.addEventListener("load",() => {
-                let s="js";
-                document.getElementById(s).innerHTML="JavaScript (Vanilla)";
-            });
-        </script>
+        <script type="text/coffeescript" src="./cfs.coffee"></script>
+        <script type="application/lua" src="./lua.lua"></script>
         <script>
             const silent=true;
             async function main(){
@@ -126,6 +77,7 @@
               });
             });
         </script>
-        <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
+        <script src="./jq.js"></script>
+        <script src="./js.js"></script>
     </body>
 </html>
