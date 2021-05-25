@@ -1,0 +1,5 @@
+#!/bin/bash
+
+chmod +x ./r.sh ./c.sh
+
+./r.sh

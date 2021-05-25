@@ -1,6 +1,7 @@
 #!/bin/bash
 
-clear
+#clear
+
 chmod +x ./c.sh
 ./c.sh
 
