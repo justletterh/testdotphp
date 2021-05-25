@@ -1,6 +1,6 @@
 #!/bin/bash
 
-npm i
+#npm i
 
 rm -rf ./bin
 mkdir ./bin
