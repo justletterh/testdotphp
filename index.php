@@ -20,7 +20,7 @@
         <link rel="stylesheet/less" type="text/css" href="./scripts/style/less.less" />
         <link rel="stylesheet" href="./bin/sass.css" />
         <link rel="stylesheet" href="./bin/scss.css" />
-        <link rel="stylesheet" href="./bin/styl.css"
+        <link rel="stylesheet" href="./bin/styl.css" />
         <!--END-->
 
         <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
