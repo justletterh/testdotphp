@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/resources/theme-crisp-all.css" />
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
+        <link rel="icon" href="./assets/icon.jpg"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/classic/theme-crisp/resources/theme-crisp-all.css" />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.0.0/ext-all.js"></script>
         <meta charset="utf-8" />
         <title>Test.</title>
-        <link rel="icon" href="https://avatars.githubusercontent.com/u/63440442"/>
         <script src="https://just-aytch.buzz/jsvers.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/coffeescript@2.5.1/lib/coffeescript-browser-compiler-legacy/coffeescript.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/fengari-web@0.1.4/dist/fengari-web.js"></script>
         <link rel="stylesheet/less" type="text/css" href="./misc/style.less" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./lib/u.min.js"></script>
         <script src="./lib/moo.min.js"></script>
 
         <!--TESTS-->
-        <link rel="stylesheet" href="./css.css" />
-        <link rel="stylesheet/less" type="text/css" href="./less.less" />
+        <link rel="stylesheet" href="./scripts/style/css.css" />
+        <link rel="stylesheet/less" type="text/css" href="./scripts/style/less.less" />
+        <link rel="stylesheet" href="./bin/sass.css" />
+        <link rel="stylesheet" href="./bin/scss.css" />
+        <link rel="stylesheet" href="./bin/styl.css"
         <!--END-->
 
         <script src="//cdn.jsdelivr.net/npm/less@3.13" ></script>
@@ -37,7 +41,9 @@
         <br />
         <span id="zjs"></span>
         <br />
-        <?php include "./php.php"?>
+        <span id="animejs"></span>
+        <br />
+        <?php include "./scripts/other/php.php"?>
         <br />
         <span id="css"></span>
         <br />
@@ -46,8 +52,12 @@
         <span id="cfs"></span>
         <br />
         <span id="lua"></span>
-        <script type="text/coffeescript" src="./cfs.coffee"></script>
-        <script type="application/lua" src="./lua.lua"></script>
+        <br />
+        <span id="sass"></span>
+        <br />
+        <span id="scss"></span>
+        <br />
+        <span id="styl"></span>
         <script>
         const silent=true;
 
@@ -91,17 +101,21 @@
             });
         });
         </script>
-        <script src="./jq.js"></script>
-        <script src="./js.js"></script>
-        <script src="./ujs.js"></script>
-        <script src="./extjs.js"></script>
-        <script src="./moojs.js"></script>
+        <script type="text/coffeescript" src="./scripts/other/cfs.coffee"></script>
+        <script type="application/lua" src="./scripts/other/lua.lua"></script>
+        <script src="./scripts/js/jq.js"></script>
+        <script src="./scripts/js/js.js"></script>
+        <script src="./scripts/js/ujs.js"></script>
+        <script src="./scripts/js/extjs.js"></script>
+        <script src="./scripts/js/moojs.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.0/cash.min.js"></script>
-        <script src="./cashjs.js"></script>
+        <script src="./scripts/js/cashjs.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js" integrity="sha512-J67nm7fNdd/paUQlLxKoReUffdsPRGHCOYkVwRGUSDv/NE5DJtL6Siinn+s8rZMYJDQJRiPdWjs/PHvjMLnKiw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./zjs.js"></script>
+        <script src="./scripts/js/zjs.js"></script>
+        <script src="./scripts/js/animejs.js"></script>
 
         <!-- TAIL -->
         <script src="./misc/tail.js"></script>
+        <!-- END -->
     </body>
 </html>
