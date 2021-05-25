@@ -1,0 +1,32 @@
+@align: center;
+@bg: black;
+@fg: white;
+@fg2: #969696;
+@lbs: 900;
+
+body {
+    text-align: @align;
+    background-color: @bg;
+    color: @fg;
+}
+
+h1#tst {
+    text-decoration: underline overline;
+    font-weight: @lbs;
+}
+
+h1#tst:before, h1#tst:after {
+    content: "|";
+}
+
+a, a:visited, hr {
+    color: @fg2;
+}
+
+a:hover {
+    color: @fg2;
+}
+
+span {
+    font-weight: @lbs;
+}
