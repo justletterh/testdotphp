@@ -1,6 +1,7 @@
 #!/bin/bash
 
 npm i&>/dev/null
+bundle install
 
 rm -rf ./bin
 mkdir ./bin

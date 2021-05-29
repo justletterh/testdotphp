@@ -1,2 +1,5 @@
 /bin
 /node_modules
+/out
+Gemfile.lock
+package-lock.json
